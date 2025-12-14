@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Laboratorio 3D - Three.js</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== PANEL IZQUIERDO ===== -->
+<div id="panel">
+
+  <div id="instrucciones">
+    <h3>Instrucciones</h3>
+    <p>Selecciona una figura, cambia su material, sombreado, iluminación y transfórmala.</p>
+  </div>
+
+  <h3>Objetos</h3>
+  <button id="cubeBtn">Cubo</button>
+  <button id="sphereBtn">Esfera</button>
+  <button id="cylinderBtn">Cilindro</button>
+  <button id="deleteBtn">Eliminar</button>
+
+  <h3>Relleno</h3>
+  <button id="solidBtn">Color</button>
+  <button id="gradientBtn">Degradado</button>
+  <button id="textureBtn">Textura</button>
+
+  <h3>Sombreado</h3>
+  <button id="basicBtn">Constante</button>
+  <button id="lambertBtn">Gouraud</button>
+  <button id="phongBtn">Phong</button>
+  <button id="flatBtn">Flat</button>
+  <button id="wireBtn">Wireframe</button>
+  <button id="fractalBtn">Fractal</button>
+
+</div>
+
+<!-- ===== PANEL DERECHO ===== -->
+<div id="panelDerecho">
+
+  <h3>Iluminación</h3>
+  <label><input type="checkbox" id="ambientCheck" checked> Luz Ambiental</label>
+  <label><input type="checkbox" id="dirCheck" checked> Luz Direccional</label>
+  <label><input type="checkbox" id="pointCheck" checked> Luz Puntual</label>
+
+  <label>Intensidad</label>
+  <input type="range" id="dirIntensity" min="0" max="2" step="0.1" value="1">
+
+  <label>Luz X</label>
+  <input type="range" id="lightX" min="-10" max="10" step="0.5" value="5">
+
+  <label>Luz Y</label>
+  <input type="range" id="lightY" min="-10" max="10" step="0.5" value="5">
+
+  <label>Luz Z</label>
+  <input type="range" id="lightZ" min="-10" max="10" step="0.5" value="5">
+
+  <h3>Transformaciones</h3>
+
+  <label>Rot X</label>
+  <input type="range" id="rotX" min="0" max="6.28" step="0.01">
+
+  <label>Rot Y</label>
+  <input type="range" id="rotY" min="0" max="6.28" step="0.01">
+
+  <label>Rot Z</label>
+  <input type="range" id="rotZ" min="0" max="6.28" step="0.01">
+
+  <label>Pos X</label>
+  <input type="range" id="posX" min="-5" max="5" step="0.1">
+
+  <label>Pos Y</label>
+  <input type="range" id="posY" min="-5" max="5" step="0.1">
+
+  <label>Pos Z</label>
+  <input type="range" id="posZ" min="-5" max="5" step="0.1">
+
+  <label>Escala</label>
+  <input type="range" id="scale" min="0.2" max="3" step="0.1" value="1">
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.149.0/build/three.min.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>
+
